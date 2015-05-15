@@ -19,7 +19,9 @@ body{
 /*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
   evitando que os floats se aglomerem.
 */
-.clearfix:before, .clearfix:after {
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
     content: " ";
     display: table;
 }
@@ -91,41 +93,52 @@ back ul{
 	text-align:center;
 	
 }
-nav{
-     position:fixed;
-	 top:0;
-	 z-index:9999;
-	 height:60px;
-	 background-color:#FE9481;
-     text-align:center;
-     width:88.6666666666667%; /* 500px ÷ 1200px = 0.416666666666667 x 100 = 41.6666666666667%*/
+nav {
+	height: 40px;
+	width: 100%;
+	background: #455868;
+	font-size: 11pt;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+	border-bottom: 2px solid #283744;
+	text-decoration:none;
 }
-     nav ul{
-          list-style-type:none;
-     }
-          nav li {
-               display: inline;
-          }
-               nav ul li a{
-                    margin-right: 0.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 600px;
+	height: 40px;
+}
+nav li {
+	display: inline;
+	float: left;
+}
+nav a {
+	color: #fff;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	text-shadow: 1px 1px 0px #283744;
+}
+nav li a {
+	border-right: 1px solid #576979;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+	border-right: 0;
+}
+nav a:hover, nav a:active {
+	background-color: #8c99a4;
+}
+nav a#pull {
+	display: none;
+}
 
-               }
-                    nav ul li:nth-child(5) a{
-                         margin-right:0;
-						 
-                    }
-               nav a:link, nav a:visited{
-                    color:#999;
-                    font-size: 1.2222222222em; /* 22px ÷ 18px = 1.2222222222em */
-                    font-weight: 300;
-                    letter-spacing: -0.0909090909em; /* -2px ÷ 22px = -0.0909090909em */
-                    line-height: 1.18181818182em; /* 26px ÷ 22px = 1.18181818182em */
-                    display:inline-block;
-					
-               }
-               nav a.ativo:link, nav a:hover{
-                    color:#FE9380;
-               }
 /*----------------------------------------------------------
 Seção .CHAMADA <<<<<========================================
 ----------------------------------------------------------*/
@@ -135,18 +148,19 @@ Seção .CHAMADA <<<<<========================================
 	 height:500px;
      width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/
 	 position:relative;
+
 	 
 }
 /*----------------------------------------------------------
 Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
 ----------------------------------------------------------*/
 .container{
-	margin-top:15px;
-     background-color:#FE9481;
+     background-color:#282828;
      height: 417px;
      padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
      width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
 	 margin-top:15px;
+ 	 
 }
 /*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
 .desktop, .tablet, .mobile{
@@ -267,50 +281,8 @@ img {
      }
 }
 
-@media screen and (max-width:960px){
-     header h1 a{
-          width:37.5%; /* 360px ÷ 960px */
-     }
-     nav{
-          width:62.5%; /* 600px ÷ 960px */
-     }
-     h2{
-          font-size:2.6666666667em; /*48px ÷ 18px*/
-     }
-/*.chamada*/
-     .chamada {
-          height: 250px;
-     }
-          .chamada h3{
-               font-size:1.5em; /*27px ÷ 18px*/
-               width:88.54166666666667%; /*850px ÷ 960px*/
-          }
-/*.container*/
-     .container{
-          height: 425px;
-          padding:3.125%; /* 30px ÷ 960px */
-          width:93.75%; /* 100% (960px) - 6.25% de padding (direita e esquerda) = 92.1875%*/
-     }
-          .desktop, .tablet, .mobile{
-               width:31.45833333333333%; /* 302px ÷ 960px */
-          }
-          .container .desktop figure, .container .tablet figure, .container .mobile figure {
-               width:66.22516556291391%; /* 200px ÷ 302px %*/
-          }
-               .container img{
-                         height:100px;
-                    }
-          .container h3{
-               font-size: 1.6666666667em; /*30px ÷ 18px*/
-          }
-          .container p{
-               font-size: 0.8333333333em; /*15px ÷ 18px*/
-               top: 230px;
-          }
-}
-
-@media screen and (max-width:768px){
-/*cores dos links e H2*/
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
      h2, a, a:link, a:visited{
      color:#FBCA61;
 }
@@ -328,14 +300,29 @@ img {
                margin-bottom: 15px;
                width: 100%;
           }
-          nav{
-               float:none;
-               text-align:center;
-               width: 100%;
-          }
-               nav a.ativo:link, nav a:hover{
-                    color:#FBCA61;
-               }
+
+	nav { 
+  		height: auto;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	nav li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+  	}
+  	nav li a {
+		border-bottom: 1px solid #576979;
+		border-right: 1px solid #576979;
+	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
 /*.chamada*/
      .chamada{
           height:200px;
@@ -385,8 +372,9 @@ img {
                }
 }
 
-@media screen and (max-width:480px){
-/*Geral*/
+/*menu nav*/
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) {
 *{
      margin:0;
      padding:0;
@@ -413,34 +401,31 @@ header {
           height: 126px;
           width: 100%;
      }
-/*menu nav*/
-nav{
-     clear:both;
-}
-     nav li {
-          background-color: #9C8CB9;
-          display:block;
-     }
-          nav ul li a{
-               height: 40px;
-               margin: 0 auto;
-               padding-top:3px;
-               text-align:center;
-               text-shadow:none;
-               width: 100%;
-          }
-          nav li a:link{
-               color:#fff;
-               font-size:1.3888888889em; /*25px ÷ 18px*/
-          }
-          nav li a.ativo:link, nav li a:hover, nav li a:visited {
-               background-color:#745F9A;
-               color:#fff;
-               text-decoration:none;
-          }
-          nav li a.ativo:hover, nav li a.ativo:visited{
-                background-color: #9C8CB9;
-          }
+
+	nav {
+		border-bottom: 0;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav a#pull {
+		display: block;
+		background-color: #283744;
+		width: 100%;
+		position: relative;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url(imagens/nav-icon.png) no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+
 /*.chamada*/
 .chamada{
      height:130px;
@@ -498,28 +483,17 @@ nav{
      }
 }
 
-@media screen and (max-width:320px){
 /*cores dos links e H2*/
-h2, a, a:link, a:visited{
-     color:#79E1D5;
-}
-a:hover{
-          color:#2FD0BC;
-}
-/*menu nav*/
-     nav li {
-          background-color: #79E1D5;
-     }
-          nav li a:link{
-          color:#555;
-          }
-          nav li a.ativo:link, nav li a:hover, nav li a:visited {
-               background-color:#2FD0BC;
-               color:#fff;
-          }
-          nav li a.ativo:hover, nav li a.ativo:visited{
-                background-color: #2FD0BC;
-          }
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	nav li a {
+		border-bottom: 1px solid #576979;
+	}		  		  
 /*.chamada*/
 .chamada{
      height:130px;
@@ -549,3 +523,5 @@ a:hover{
           display:none; /*oculta o parágrafo*/
      }
 }
+
+#music {margin-top:520px;}
