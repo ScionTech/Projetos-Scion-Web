@@ -96,8 +96,8 @@ back ul{
 nav {
 	height: 40px;
 	width: 100%;
-	background: #455868;
-	font-size: 11pt;
+	background: #666666;
+	font-size: 13pt;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-weight: bold;
 	position: relative;
@@ -106,7 +106,7 @@ nav {
 }
 nav ul {
 	padding: 0;
-	margin: 0 auto;
+	margin: auto;
 	width: 600px;
 	height: 40px;
 }
@@ -115,16 +115,16 @@ nav li {
 	float: left;
 }
 nav a {
-	color: #fff;
+	color: #0D00FF;
 	display: inline-block;
-	width: 100px;
+	width: 150px;
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
-	text-shadow: 1px 1px 0px #283744;
+	text-shadow: 1px 1px 0px #00F;
 }
 nav li a {
-	border-right: 1px solid #576979;
+	border-right: 1px solid #0000FF;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -132,6 +132,8 @@ nav li a {
 nav li:last-child a {
 	border-right: 0;
 }
+
+/* Mouse Sobre */
 nav a:hover, nav a:active {
 	background-color: #8c99a4;
 }
