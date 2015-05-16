@@ -91,6 +91,7 @@ nav - menu de navegação
 back ul{	
 	width:88.6666666666667%;
 	text-align:center;
+	text-decoration:none;
 	
 }
 nav {
@@ -109,10 +110,12 @@ nav ul {
 	margin: auto;
 	width: 600px;
 	height: 40px;
+	text-decoration:none;
 }
 nav li {
 	display: inline;
 	float: left;
+	text-decoration:none;
 }
 nav a {
 	color: #0D00FF;
@@ -122,15 +125,18 @@ nav a {
 	text-decoration: none;
 	line-height: 40px;
 	text-shadow: 1px 1px 0px #00F;
+
 }
 nav li a {
 	border-right: 1px solid #0000FF;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
+	text-decoration:none;
 }
 nav li:last-child a {
 	border-right: 0;
+	text-decoration:none;
 }
 
 /* Mouse Sobre */
