@@ -128,11 +128,16 @@ nav a {
 
 }
 nav li a {
-	border-right: 1px solid #0000FF;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	text-decoration:none;
+	display: block;
+    font-size: 14px;
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
 }
 nav li:last-child a {
 	border-right: 0;
@@ -155,7 +160,8 @@ Seção .CHAMADA <<<<<========================================
 	 min-width:25%;
 	 height:500px;
      width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/
-	 position:relative;
+	 background: #df0031;
+     position: relative;
 
 	 
 }
