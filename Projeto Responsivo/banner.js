@@ -30,6 +30,6 @@ function mudaImg(i) {
 	document.getElementById("banner_img_4").setAttribute("class", "");
 	document.getElementById("banner_img_" + img[indice]).setAttribute("class", "hover");
 	
-	document.getElementById("banner_img").innerHTML = "<img src='banner_img/"+ img[indice] +".jpg' width='800' height='500' border='0' alt='Banner'>";
+	document.getElementById("banner_img").innerHTML = "<img src='banner_img/"+ img[indice] +".jpg' width='800' height='100%' border='0' alt='Banner'>";
 
 }

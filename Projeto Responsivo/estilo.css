@@ -58,10 +58,16 @@ a, a:link, a:visited{
      text-decoration:none; /*retira o sublinhado dos links*/
 }
 a:hover{
-     color:#FE5E41; /* Passar o mouse sobre o link */
+     color:#FE5E41; Passar o mouse sobre o link */
      text-shadow:none; /*retira a sombra da fonte*/
 	 background-color: #8c99a4;
 }
+
+
+
+
+
+
 /*----------------------------------------------------------
 Seção HEADER - Topo do Site <<<<<===========================
 ----------------------------------------------------------*/
@@ -100,6 +106,7 @@ nav {
 	border-bottom: 2px solid #283744;
 }
 nav ul {
+	
 	padding: 0;
 	margin: 0 auto;
 	width: 600px;
@@ -112,7 +119,7 @@ nav li {
 nav a {
 	color: #fff;
 	display: inline-block;
-	width: 100px;
+	width: 150px;
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
@@ -192,11 +199,11 @@ line-height: 43px;
 Seção .CHAMADA <<<<<========================================
 ----------------------------------------------------------*/
 .chamada{
-     min-height:320px;
-	 min-width:25%;
-	 height:500px;
+     min-height:100%;
+	 min-width:100%;
+	 height:100%;
      width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/
-	 background: #1C1C1C;
+	 
      position: relative;
 
 	 
@@ -214,6 +221,7 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
 }
 /*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
 .desktop, .tablet, .mobile{
+	margin-top:50px;
      float:left;
      position:relative;
      text-align:center;
@@ -223,8 +231,8 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
      margin-right: 2.631578947368421%; /* 30px ÷ 1140px =  0.02631578947368421 x 100 = 2.631578947368421%*/
 }
 .mobile{
-     background-color:#9C8CB9;
-     margin-right:0px;
+
+	 
 }
 .desktop{
      background-color:#FE9481;
