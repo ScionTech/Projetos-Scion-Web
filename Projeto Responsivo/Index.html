@@ -1,16 +1,12 @@
 ﻿<!DOCTYPE html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
 <title>Bocchi Eventos</title>
-<link rel="stylesheet" href="estilo.css">
-<link rel="stylesheet" href="normalize.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="estilo.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>
 		$(function() {
 			var pull 		= $('#pull');
@@ -19,7 +15,6 @@
 
 			$(pull).on('click', function(e) {
 				e.preventDefault();
-				
 				menu.slideToggle();
 			});
 
@@ -39,14 +34,14 @@
 </back>
 
 <!-- nav Menu -->
-<nav>
-  <ul>
-    <li><a href="Index.html">Inicio</a></li>
-    <li><a href="Eventos.html">Eventos</a></li>
-    <li><a href="Contato.html">Contato</a></li>
-    <li><a href="Equipamentos.html">Equipamentos</a></li>
-  </ul>
-  <a href="#" id="pull">Menu</a>
+<nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="Index.html">Home</a></li>			
+			<li><a href="Fotos.html">Eventos</a></li>
+			<li><a href="#">Equipamentos</a></li>
+            <li><a href="Contato.html">Contato</a></li>			
+		</ul>
+		<a href="#" id="pull">Menu</a>
 </nav>
 <!-- fim nav Menu -->
 

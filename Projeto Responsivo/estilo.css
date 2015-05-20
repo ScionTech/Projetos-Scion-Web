@@ -58,9 +58,9 @@ a, a:link, a:visited{
      text-decoration:none; /*retira o sublinhado dos links*/
 }
 a:hover{
-     color:#FE5E41;
-     text-decoration:underline; /*inseri uma linha sob o link*/
+     color:#FE5E41; /* Passar o mouse sobre o link */
      text-shadow:none; /*retira a sombra da fonte*/
+	 background-color: #8c99a4;
 }
 /*----------------------------------------------------------
 Seção HEADER - Topo do Site <<<<<===========================
@@ -88,63 +88,44 @@ logotipo
 nav - menu de navegação
 =========================
 */
-back ul{	
-	width:88.6666666666667%;
-	text-align:center;
-	text-decoration:none;
-	
-}
 nav {
 	height: 40px;
 	width: 100%;
-	background: #666666;
-	font-size: 13pt;
+	background: #455868;
+	font-size: 11pt;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-weight: bold;
 	position: relative;
 	border-bottom: 2px solid #283744;
-	text-decoration:none;
 }
 nav ul {
 	padding: 0;
-	margin: auto;
+	margin: 0 auto;
 	width: 600px;
 	height: 40px;
-	text-decoration:none;
 }
 nav li {
 	display: inline;
 	float: left;
-	text-decoration:none;
 }
 nav a {
-	color: #0D00FF;
+	color: #fff;
 	display: inline-block;
-	width: 150px;
+	width: 100px;
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
-	text-shadow: 1px 1px 0px #00F;
-
+	text-shadow: 1px 1px 0px #283744;
 }
 nav li a {
-	display: block;
-    font-size: 14px;
-    color: #222222;
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
+	border-right: 1px solid #576979;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
 }
 nav li:last-child a {
 	border-right: 0;
-	text-decoration:none;
 }
-
-/* Mouse Sobre */
 nav a:hover, nav a:active {
 	background-color: #8c99a4;
 }
@@ -160,7 +141,7 @@ Seção .CHAMADA <<<<<========================================
 	 min-width:25%;
 	 height:500px;
      width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/
-	 background: #df0031;
+	 background: #1C1C1C;
      position: relative;
 
 	 
@@ -316,27 +297,27 @@ img {
           }
 
 	nav { 
-  		height: auto;
-  	}
-  	nav ul {
-  		width: 100%;
-  		display: block;
-  		height: auto;
-  	}
-  	nav li {
-  		width: 50%;
-  		float: left;
-  		position: relative;
-  	}
-  	nav li a {
-		border-bottom: 1px solid #576979;
-		border-right: 1px solid #576979;
-	}
-  	nav a {
-	  	text-align: left;
-	  	width: 100%;
-	  	text-indent: 25px;
-  	}
+        height: auto;
+    }
+    nav ul {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    nav li a {
+        border-bottom: 1px solid #576979;
+        border-right: 1px solid #576979;
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
 /*.chamada*/
      .chamada{
           height:200px;
@@ -417,28 +398,28 @@ header {
      }
 
 	nav {
-		border-bottom: 0;
-	}
-	nav ul {
-		display: none;
-		height: auto;
-	}
-	nav a#pull {
-		display: block;
-		background-color: #283744;
-		width: 100%;
-		position: relative;
-	}
-	nav a#pull:after {
-		content:"";
-		background: url(imagens/nav-icon.png) no-repeat;
-		width: 30px;
-		height: 30px;
-		display: inline-block;
-		position: absolute;
-		right: 15px;
-		top: 10px;
-	}
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #283744;
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull:after {
+        content:"";
+        background: url('nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
 
 /*.chamada*/
 .chamada{
@@ -501,13 +482,13 @@ header {
 /*Smartphone*/
 @media only screen and (max-width : 320px) {
 	nav li {
-		display: block;
-		float: none;
-		width: 100%;
-	}
-	nav li a {
-		border-bottom: 1px solid #576979;
-	}		  		  
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav li a {
+        border-bottom: 1px solid #576979;
+    }	  
 /*.chamada*/
 .chamada{
      height:130px;
