@@ -216,12 +216,12 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
      height: 417px;
      padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
      width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
-	 margin-top:15px;
+	 margin-top:350px;
  	 
 }
 /*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
 .desktop, .tablet, .mobile{
-	margin-top:50px;
+	 margin-top:10px;
      float:left;
      position:relative;
      text-align:center;

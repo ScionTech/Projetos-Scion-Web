@@ -23,13 +23,15 @@ function mudaImg(i) {
 		}
 		
 	}
-	
+	/*----------------------------------------------------------
+	Configuração Imagens do Banner <<<<<=============
+	----------------------------------------------------------*/
 	document.getElementById("banner_img_1").setAttribute("class", "");
 	document.getElementById("banner_img_2").setAttribute("class", "");
 	document.getElementById("banner_img_3").setAttribute("class", "");
 	document.getElementById("banner_img_4").setAttribute("class", "");
 	document.getElementById("banner_img_" + img[indice]).setAttribute("class", "hover");
 	
-	document.getElementById("banner_img").innerHTML = "<img src='banner_img/"+ img[indice] +".jpg' width='800' height='100%' border='0' alt='Banner'>";
+	document.getElementById("banner_img").innerHTML = "<img src='banner_img/"+ img[indice] +".jpg' width='100%' height='100%' border='0' alt='Banner'>";
 
 }
