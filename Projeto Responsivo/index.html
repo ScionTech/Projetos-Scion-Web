@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<head>
+<title>Bocchi Eventos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="estilo.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<body class="center clearfix">
+<div align="center">
+	<ul><a href="index.html"><img src="imagens/CabecalhoComLogo.fw.png"/></ul></a>
+</div>
+
+<!-- nav Menu -->
+<nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="Index.html">Home</a></li>			
+			<li><a href="Fotos.html">Eventos</a></li>
+			<li><a href="#">Equipamentos</a></li>
+            <li><a href="Contato.html">Contato</a></li>			
+		</ul>
+		<a href="#" id="pull">Menu</a>
+</nav>
+<!-- fim nav Menu -->
+
+
+<!-- .chamada Banner 
+
+!!!!! NIGGA IMPORTANTE !!!!
+foi adicionado o banner em HTML aqui, O banner.css lá encima para vincular 
+os scripts em css e o Banner.js para que o menu funcione FIMZA NÂO APAGARA HUEHUEHUE -->
+
+<!-- <div class="chamada" align="center">  
+        <link href="banner.css" rel="stylesheet" type="text/css" />
+
+<script type="text/jscript" src="banner.js"></script>
+
+<div id="banner" class="banner">
+
+	<div id="banner_img">
+    
+   	  <img src="imagens/Sound Bars.fw.png" width="50%" height="50%" border="0" alt="Banner">
+        
+    </div>
+    
+    <div id="botoes">
+    
+    		<a href="javascript:void(0);" id="banner_img_1" onclick="mudaImg('0');">1</a>
+        	<a href="javascript:void(0);" id="banner_img_2" onclick="mudaImg('1');">2</a>
+			<a href="javascript:void(0);" id="banner_img_3" onclick="mudaImg('2');">3</a>
+        	<a href="javascript:void(0);" id="banner_img_4" onclick="mudaImg('3');">4</a>
+    
+    </div> -->    
+<div id="slider">
+<figure>
+<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/taj-mahal.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/ibiza.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/ankor-wat.jpg" alt="">
+<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
+</figure>
+</div>
+    
+
+</div>
+</div>
+<!-- fim .chamada Banner -->
+
+
+<!-- .container Colunas -->
+<section class="container">
+
+  <!-- #desktop Coluna 1 -->
+  <div class="desktop">
+    <figure> <img src="imagens/Bocchi Eventos - Logo Veturizado - Verde.jpg" width="238" height="125" alt="Criar Site Responsivo para Desktop"> </figure>
+    <h3>Eventos</h3>
+    <p>Em 1975 começamos com brincadeiras dançantes em residências, sucesso total nos eventos.<br />
+    Na solicitação de nossos serviços, lá chegavamos com som e iluminação.<span class="btn"><a href="Contato.html" title="Leia mais...">Leia mais...</a></span></p>
+  </div>
+  <!-- fim #desktop Coluna 1 -->
+  
+  <!-- tablet Coluna 2 -->
+  <div class="tablet">
+    <figure> <img src="imagens/Bocchi Eventos - Logo Veturizado - Verde.jpg" width="238" height="125" alt="Criar Site Responsivo para Desktop"> </figure>
+    <h3>Quem Somos</h3>
+    <p>Em 1975 começamos com brincadeiras dançantes em residências, sucesso total nos eventos.<br />
+    Na solicitação de nossos serviços, lá chegavamos com som e iluminação.<span class="btn"><a href="Contato.html" title="Leia mais...">Leia mais...</a></span></p>
+  </div>
+  <!-- fim #tablet Coluna 2 -->
+  
+  <!-- #mobile Coluna 3 -->
+  <div class="mobile">
+    <figure> <img src="imagens/Bocchi Eventos - Logo Veturizado - Verde.jpg" width="238" height="125" alt="Criar Site Responsivo para Desktop"> </figure>
+    <h3>Quem Somos</h3>
+    <p>Em 1975 começamos com brincadeiras dançantes em residências, sucesso total nos eventos.<br />
+    Na solicitação de nossos serviços, lá chegavamos com som e iluminação.<span class="btn"><a href="Contato.html" title="Leia mais...">Leia mais...</a></span></p>
+  </div>  
+  <!-- fim #mobile Coluna 3 -->  
+</section>
+<!-- fim .container Colunas -->
+
+<!-- footer Rodape -->
+<footer>
+
+  <!-- copyright -->
+  <small class="copyright">
+  <p>Copyright © 2015 - Todos os Direitos Reservados ao <a href="http://www.sciontech.com" title="Scion Tech">Scion Tech</a></p>
+  </small>
+  <!-- fim .copyright -->
+  
+  <!-- .desenvolvedor -->
+  <small class="desenvolvedor"> Desenvolvedor </small>
+  <!-- fim .desenvolvedor --> 
+  
+</footer>
+<!-- fim footer Rodape-->
+
+<script type="text/javascript">
+</script>
+
+<!-- sticky Social -->
+
+<div class="sticky-container">
+<ul class="sticky">
+<li> <img width="32" height="32" title="" alt="" src="imagens/fb1.png" />
+<p>Facebook</p>
+</li>
+<li> <img width="32" height="32" title="" alt="" src="imagens/tw1.png" />
+<p>Twitter</p>
+</li>
+<li> <img width="32" height="32" title="" alt="" src="imagens/li1.png" />
+<p>Linkedin</p>
+</li>
+</ul>
+</div>
+
+<!-- fim sticky Social -->
+</body>
+</html>
