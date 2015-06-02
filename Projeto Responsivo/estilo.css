@@ -216,7 +216,7 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
      height: 417px;
      padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
      width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
-	 margin-top:350px;
+	 margin-top:10px;
  	 
 }
 /*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
@@ -231,8 +231,7 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
      margin-right: 2.631578947368421%; /* 30px ÷ 1140px =  0.02631578947368421 x 100 = 2.631578947368421%*/
 }
 .mobile{
-
-	 
+	background-color:#00BFFF;	 
 }
 .desktop{
      background-color:#FE9481;
@@ -569,6 +568,7 @@ header {
           float:none;
           height:160px;
           width:100%;
+
      }
      .container .desktop figure, .container .tablet figure, .container .mobile figure{
           float:left;
@@ -581,7 +581,6 @@ header {
           display:none; /*oculta o parágrafo*/
      }
 }
-
 @keyframes slidy {
 0% { left: 0%; }
 20% { left: 0%; }
@@ -595,7 +594,7 @@ header {
 }
 
 div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; float: left; }
+div#slider figure img { width: 20%; height:auto; float: left; }
 div#slider figure { 
   position: relative;
   width: 500%;
