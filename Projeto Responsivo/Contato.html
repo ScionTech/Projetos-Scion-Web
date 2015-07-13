@@ -1,31 +1,49 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
 <head>
-<title>Quem Somos</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="estiloContato.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body class="center clearfix">
-<back><ul><img src="imagens/CabecalhoComLogo.fw.png" /></ul></back>
-<!-- nav -->
-<nav>
-  <ul>
-    <li><a href="Index.html">Inicio</a></li>
-    <li><a href="Eventos.html">Eventos</a></li>
-    <li><a href="Contato.html">Quem Somos</a></li>
-  </ul>
-</nav>
-<!-- fim nav -->
+<title>Bocchi Eventos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="estiloContato.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
 
-<!-- .chamada -->
-<div class="chamada">
-  <h2>
-  <span>EM 1975 começamos com brincadeiras dançantes em residências, sucesso total nos eventos.<br />Na solicitação de nossos serviços, lá chegávamos com som e iluminação, não tinha muita iluminição, pois até inventamos uma, em um toca disco que não funcionava, mas ficava show de bola e aproveitamos até anos 80.<br />Tivemos bom tempo sem atividades, iniciamos novamente em 2007 aos poucos com aniversários, bodas, casamentos, corporativos, formaturas, palestras e eventos em geral.<br />Hoje contamos com estruturas, bons equipamentos de som e iluminação e DJ's para que seu evento seja de qualidade e sucesso, pois é nosso compromisso.</span>
-  </h2>
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<body class="center clearfix">
+<div align="center">
+	<ul><a href="index.html"><img src="imagens/CabecalhoComLogo.fw.png"/></ul></a>
 </div>
-<!-- fim .chamada -->
+
+<!-- nav Menu -->
+<nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="Index.html">Home</a></li>			
+			<li><a href="Fotos.html">Eventos</a></li>
+			<li><a href="#">Equipamentos</a></li>
+            <li><a href="Contato.html">Contato</a></li>			
+		</ul>
+		<a href="#" id="pull">Menu</a>
+</nav>
+<!-- fim nav Menu -->   
 
 <!-- .container -->
 <section class="container">
@@ -35,12 +53,12 @@
     <form class="contact_form" action="" method="post" name="contact_form">
     <ul>
     <li>
-         <h2>Contato</h2>
+         <h3>Contato</h3>
          <span class="required_notification">*campo obrigatório</span>
     </li>
     <li>
         <label for="name">Nome:</label>
-        <input type="text" name="name" required="required" placeholder="João..." />
+        <input type="text" name="name" required placeholder="João..." />
         
     </li>
     <li>
@@ -63,18 +81,41 @@
 </section>
 <!-- fim .container -->
 
-<!-- footer -->
+<!-- footer Rodape -->
 <footer>
+
   <!-- copyright -->
   <small class="copyright">
-  <p>Copyright © 2014 - Todos os Direitos Reservados ao <a href="http://www.saje.com.br" title="SaJe">SaJe</a></p>
+  <p>Copyright © 2015 - Todos os Direitos Reservados ao <a href="http://www.sciontech.com" title="Scion Tech">Scion Tech</a></p>
   </small>
   <!-- fim .copyright -->
+  
   <!-- .desenvolvedor -->
   <small class="desenvolvedor"> Desenvolvedor </small>
   <!-- fim .desenvolvedor --> 
+  
 </footer>
-<!-- fim footer -->
+<!-- fim footer Rodape-->
 
+<script type="text/javascript">
+</script>
+
+<!-- sticky Social -->
+
+<div class="sticky-container">
+<ul class="sticky">
+<li> <img width="32" height="32" title="" alt="" src="imagens/fb1.png" />
+<p>Facebook</p>
+</li>
+<li> <img width="32" height="32" title="" alt="" src="imagens/tw1.png" />
+<p>Twitter</p>
+</li>
+<li> <img width="32" height="32" title="" alt="" src="imagens/li1.png" />
+<p>Linkedin</p>
+</li>
+</ul>
+</div>
+
+<!-- fim sticky Social -->
 </body>
 </html>
