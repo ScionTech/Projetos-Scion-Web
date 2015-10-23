@@ -3,10 +3,15 @@
 <title>Bocchi Eventos</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="estilo.css">
 	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="estilo.css">
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- fim Estilos CSS -->
+	
+    <!-- função Menu -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>
 		$(function() {
 			var pull 		= $('#pull');
@@ -26,12 +31,18 @@
     		});
 		});
 	</script>
+    <!-- fim função Menu -->
+        
 </head>
 
+
 <body class="center clearfix">
+
+<!-- Topo com logo e link -->
 <div align="center">
-	<ul><a href="index.html"><img src="imagens/CabecalhoComLogo.fw.png"/></ul></a>
+	<a href="index.html"><img src="imagens/CabecalhoComLogo.fw.png"></a>
 </div>
+<!-- fim Topo com logo e link -->
 
 <!-- nav Menu -->
 <nav class="clearfix">
@@ -45,49 +56,17 @@
 </nav>
 <!-- fim nav Menu -->
 
-
-<!-- .chamada Banner 
-
-!!!!! NIGGA IMPORTANTE !!!!
-foi adicionado o banner em HTML aqui, O banner.css lá encima para vincular 
-os scripts em css e o Banner.js para que o menu funcione FIMZA NÂO APAGARA HUEHUEHUE -->
-
-<!-- <div class="chamada" align="center">  
-        <link href="banner.css" rel="stylesheet" type="text/css" />
-
-<script type="text/jscript" src="banner.js"></script>
-
-<div id="banner" class="banner">
-
-	<div id="banner_img">
-    
-   	  <img src="imagens/Sound Bars.fw.png" width="50%" height="50%" border="0" alt="Banner">
-        
-    </div>
-    
-    <div id="botoes">
-    
-    		<a href="javascript:void(0);" id="banner_img_1" onclick="mudaImg('0');">1</a>
-        	<a href="javascript:void(0);" id="banner_img_2" onclick="mudaImg('1');">2</a>
-			<a href="javascript:void(0);" id="banner_img_3" onclick="mudaImg('2');">3</a>
-        	<a href="javascript:void(0);" id="banner_img_4" onclick="mudaImg('3');">4</a>
-    
-    </div> -->    
+<!-- nav Banner Rotativo -->
 <div id="slider">
 <figure>
-<img src="banner_img/1.png" alt="">
-<img src="banner_img/2.jpg" alt="">
-<img src="banner_img/3.jpg" alt="">
-<img src="banner_img/4.jpg" alt="">
-<img src="banner_img/5.jpg" alt="">
+<img src="banner_img/banner1.jpg" alt="">
+<img src="banner_img/banner2.jpg" alt="">
+<img src="banner_img/banner3.jpg" alt="">
+<img src="banner_img/banner4.jpg" alt="">
+<img src="banner_img/banner5.jpg" alt="">
 </figure>
 </div>
-    
-
-</div>
-</div>
-<!-- fim .chamada Banner -->
-
+<!-- fim nav Banner Rotativo -->
 
 <!-- .container Colunas -->
 <section class="container">
@@ -137,11 +116,7 @@ os scripts em css e o Banner.js para que o menu funcione FIMZA NÂO APAGARA HUEH
 </footer>
 <!-- fim footer Rodape-->
 
-<script type="text/javascript">
-</script>
-
 <!-- sticky Social -->
-
 <div class="sticky-container">
 <ul class="sticky">
 <li> <img width="32" height="32" title="" alt="" src="imagens/fb1.png" />
@@ -155,7 +130,7 @@ os scripts em css e o Banner.js para que o menu funcione FIMZA NÂO APAGARA HUEH
 </li>
 </ul>
 </div>
-
 <!-- fim sticky Social -->
+
 </body>
 </html>

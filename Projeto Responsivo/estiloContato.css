@@ -10,6 +10,7 @@ body{
      line-height: 22px;/*altura da linha*/
      text-align: left; /*alinhando o texto à esquerda*/
      text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/
+	 
 }
 .center{
      margin: 0 auto;
@@ -52,21 +53,11 @@ p{
      font-weight: 300;/*modifica a força da fonte para light*/
      letter-spacing: -1px; /*espaçamento entre as letras*/
 }
-a, a:link, a:visited{
+a, a:link, a:visited, a:hover{
      color:#FE9380; /*cor dos links*/
      font-weight:400; /*modifica a força da fonte para semi-bold*/
      text-decoration:none; /*retira o sublinhado dos links*/
 }
-a:hover{
-     color:#FE5E41; Passar o mouse sobre o link */
-     text-shadow:none; /*retira a sombra da fonte*/
-	 background-color: #8c99a4;
-}
-
-
-
-
-
 
 /*----------------------------------------------------------
 Seção HEADER - Topo do Site <<<<<===========================
@@ -169,6 +160,7 @@ margin: 0px 0px 1px 0px;
 transition: all 0.25s ease-in-out;
 cursor: pointer;
 filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+
 filter: gray;
 -webkit-filter: grayscale(100%);
 }
@@ -213,7 +205,7 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
 ----------------------------------------------------------*/
 .container{
      background-color:#282828;
-     height: 507px;
+     height: 417px;
      padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
      width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
 	 margin-top:10px;
@@ -225,34 +217,30 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
      float:left;
      position:relative;
      text-align:center;
-     width:41.57894736842105%; /* 360px ÷ 1140px = 0.3157894736842105 x 100 = 31.57894736842105%*/
+     width:43.859649122%; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
+	 background-color:#FFF;
+	 
 }
-.desktop{
-     background-color:#fffaf0;
-}
-
-
 /*
 =========================
 figure - imagens
 =========================
 */
-/*.container .desktop figure, .container .tablet figure, .container .mobile figure {
-     width:69.44444444444444%; /* 250px ÷ 360px = 0.6944444444444 x 100 = 69.44444444444444%
-}*/
+.container .desktop figure, .container .tablet figure, .container .mobile figure {
+     width:69.44444444444444%; /* 250px ÷ 360px = 0.6944444444444 x 100 = 69.44444444444444%*/
+}
 /*
 =========================
 formatação do texto
 =========================
 */
 .container h3{
-     color:#696969;
+     color:#fff;
      font-size: 1.77777777778em; /* 32px ÷ 18px = 1.77777777778em */
      font-weight: 300;
      letter-spacing: -0.0625em; /* -2px ÷ 32px = 0.0625em */
      margin-bottom: 30px;
      text-shadow:none;
-	 font-family:"Comic Sans MS", cursive;
 }
 .container p{
      background-color:#fff;
@@ -588,7 +576,7 @@ header {
 }
 
 div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; height: 600px; float: left; }
+div#slider figure img { width: 20%; height: auto; float: left; }
 div#slider figure { 
   position: relative;
   width: 500%;
@@ -599,5 +587,3 @@ div#slider figure {
   font-size: 0;
   animation: 30s slidy infinite; 
 }
-
-

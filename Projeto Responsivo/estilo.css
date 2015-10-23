@@ -10,6 +10,7 @@ body{
      line-height: 22px;/*altura da linha*/
      text-align: left; /*alinhando o texto à esquerda*/
      text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/
+	 
 }
 .center{
      margin: 0 auto;
@@ -52,21 +53,11 @@ p{
      font-weight: 300;/*modifica a força da fonte para light*/
      letter-spacing: -1px; /*espaçamento entre as letras*/
 }
-a, a:link, a:visited{
+a, a:link, a:visited, a:hover{
      color:#FE9380; /*cor dos links*/
      font-weight:400; /*modifica a força da fonte para semi-bold*/
      text-decoration:none; /*retira o sublinhado dos links*/
 }
-a:hover{
-     color:#FE5E41; Passar o mouse sobre o link */
-     text-shadow:none; /*retira a sombra da fonte*/
-	 background-color: #8c99a4;
-}
-
-
-
-
-
 
 /*----------------------------------------------------------
 Seção HEADER - Topo do Site <<<<<===========================
@@ -594,7 +585,7 @@ header {
 }
 
 div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; height: 600px; float: left; }
+div#slider figure img { width: 20%; height: auto; float: left; }
 div#slider figure { 
   position: relative;
   width: 500%;
