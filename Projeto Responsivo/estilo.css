@@ -12,6 +12,7 @@ body{
      text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/
 	 
 }
+
 .center{
      margin: 0 auto;
      max-width:1200px; /*largura máxima do layout*/
