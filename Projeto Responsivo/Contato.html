@@ -33,7 +33,8 @@
 		});
 	</script>
     <!-- fim função Menu -->
-        
+    
+    
 </head>
 
 
@@ -62,7 +63,7 @@
 
   <!-- #desktop -->
   <div class="desktop">    
-    <form class="pure-form pure-form-aligned">
+    <form class="pure-form pure-form-aligned" method="post">
     <fieldset>
         <div class="pure-control-group">
             <label for="name">Nome</label>
@@ -80,15 +81,22 @@
         </div>
         
      	<div class="pure-control-group">
-        	<label for="titulo">Titulo</label>
-        	<input id="titulo" type="text" class="pure-input-1-2" placeholder="Assunto">
+        	<label for="titulo">Assunto</label>
+        	<select id="titulo" class="pure-input-1-2">
+            	<option value="...">...</option>
+                <option value="casamento">Casamento</option>
+                <option value="festa">Festa</option>
+                <option value="aniversario">Aniversário</option>
+            </select>
             
             <label for="comentarios">Comentarios</label>
         	<textarea id="comentarios" class="pure-input-1-2" placeholder="Digite aqui..."></textarea>
         </div>
 
         <div class="pure-controls">
+
             <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            
         </div>
     </fieldset>
 	</form>    
