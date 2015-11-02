@@ -33,6 +33,7 @@
 		});
 	</script>
     <!-- fim função Menu -->
+   
     
     
 </head>
@@ -63,43 +64,47 @@
 
   <!-- #desktop -->
   <div class="desktop">    
-    <form class="pure-form pure-form-aligned" method="post">
+    <form class="pure-form pure-form-aligned" action="email.php" method="post">
     <fieldset>
         <div class="pure-control-group">
             <label for="name">Nome</label>
-            <input id="name" type="text" placeholder="Nome">
+            <input id="namee" type="text" placeholder="Nome" required>
         </div>
         
         <div class="pure-control-group">
             <label for="telephone">Telefone</label>
-            <input id="telephone" type="text" placeholder="Telefone">
+            <input id="telephonee" type="text" placeholder="Telefone" required>
         </div>       
 
         <div class="pure-control-group">
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Email">
+            <input id="emaile" type="email" placeholder="Email" required>                                  
         </div>
         
      	<div class="pure-control-group">
         	<label for="titulo">Assunto</label>
-        	<select id="titulo" class="pure-input-1-2">
+        	<select id="tituloe" class="pure-input-1-2" required="required">
             	<option value="...">...</option>
-                <option value="casamento">Casamento</option>
-                <option value="festa">Festa</option>
-                <option value="aniversario">Aniversário</option>
+                <option value="Casamento">Casamento</option>
+                <option value="Confraternização">Confraternização</option>
+                <option value="Aniversário">Aniversário</option>
             </select>
             
             <label for="comentarios">Comentarios</label>
-        	<textarea id="comentarios" class="pure-input-1-2" placeholder="Digite aqui..."></textarea>
+        	<textarea id="comentariose" class="pure-input-1-2" placeholder="Digite aqui..." required></textarea>
+            
         </div>
-
+        
         <div class="pure-controls">
-
+			<div class="g-recaptcha" data-sitekey="6LdoDxATAAAAAK6XK1E0qkAV0WhwigLsOvgmWNfj"></div>
             <button type="submit" class="pure-button pure-button-primary">Submit</button>
+
             
         </div>
     </fieldset>
-	</form>    
+	</form>
+     
+    <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>    
   </div>
   <!-- fim #desktop -->  
 </section>

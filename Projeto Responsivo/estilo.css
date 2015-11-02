@@ -9,8 +9,7 @@ body{
      font-weight: 300; /*indica que a fonte está coonfigurada como Open Sans Light*/
      line-height: 22px;/*altura da linha*/
      text-align: left; /*alinhando o texto à esquerda*/
-     text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/
-	 
+     text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/	 
 }
 
 .center{
@@ -49,10 +48,12 @@ h3{
      font-weight: 300;
      letter-spacing: -2px; /*espaçamento entre as letras*/
      line-height: 38px;
+	 color:#B8860B;
 }
 p{
      font-weight: 300;/*modifica a força da fonte para light*/
      letter-spacing: -1px; /*espaçamento entre as letras*/
+	 text-decoration:none;
 }
 a, a:link, a:visited, a:hover{
      color:#FE9380; /*cor dos links*/
@@ -165,7 +166,7 @@ filter: gray;
 -webkit-filter: grayscale(100%);
 
 }
-.sticky li:hover {
+.sticky li:hover{
 margin-left: -115px;
 -webkit-transform: translateX(-115px);
 		-moz-transform: translateX(-115px);
@@ -188,6 +189,7 @@ margin: 0px;
 text-transform: uppercase;
 line-height: 43px;
 }
+
 
 /*----------------------------------------------------------
 Seção .CHAMADA <<<<<========================================
