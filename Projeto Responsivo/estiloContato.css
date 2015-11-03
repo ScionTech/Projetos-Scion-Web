@@ -225,18 +225,19 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
 	 margin-top:10px;
      float:right;
      position:relative;
-     text-align:center;
-     width:30.701754385%; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
-	 background-color:#fff;	 
+     width:43.859649122%; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
+	 background-color:#fff;
+		 
 }
+
 /*
 =========================
 figure - imagens
 =========================
 */
-.container .desktop figure, .container .tablet figure, .container .mobile figure {
-     width:69.44444444444444%; /* 250px ÷ 360px = 0.6944444444444 x 100 = 69.44444444444444%*/
-}
+/*.container .desktop figure, .container .tablet figure, .container .mobile figure {
+     width:69.44444444444444%; /* 250px ÷ 360px = 0.6944444444444 x 100 = 69.44444444444444%
+}*/
 /*
 =========================
 formatação do texto
