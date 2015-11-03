@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-     background: url(imagens/Background03.jpg); /*inserção da imagem de fundo em todo o site*/
+     background: url(imagens/background03a.jpg); /*inserção da imagem de fundo em todo o site*/
      color:#868686; /*cor padrão para todas as fontes*/
      font-family: "Open Sans", Helvetica, sans-serif, arial; /*definição da fonte geral incorporada do Google Fonts*/
      /*font-size: 18px; /*tamanho da fonte*/
