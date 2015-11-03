@@ -64,26 +64,26 @@
 
   <!-- #desktop -->
   <div class="desktop">    
-    <form class="pure-form pure-form-aligned" action="email.php" method="post">
+    <form class="pure-form pure-form-aligned"  method="post" action="email.php">
     <fieldset>
         <div class="pure-control-group">
             <label for="name">Nome</label>
-            <input id="namee" type="text" placeholder="Nome" required>
+            <input name="name" type="text" placeholder="Nome" autofocus required>
         </div>
         
         <div class="pure-control-group">
             <label for="telephone">Telefone</label>
-            <input id="telephonee" type="text" placeholder="Telefone" required>
+            <input name="telephone" type="text" placeholder="Telefone" required>
         </div>       
 
         <div class="pure-control-group">
             <label for="email">Email</label>
-            <input id="emaile" type="email" placeholder="Email" required>                                  
+            <input name="email" type="email" placeholder="Email" required>                                  
         </div>
         
      	<div class="pure-control-group">
         	<label for="titulo">Assunto</label>
-        	<select id="tituloe" class="pure-input-1-2" required="required">
+        	<select name="request" class="pure-input-1-2" required="required">
             	<option value="...">...</option>
                 <option value="Casamento">Casamento</option>
                 <option value="Confraternização">Confraternização</option>
@@ -91,20 +91,20 @@
             </select>
             
             <label for="comentarios">Comentarios</label>
-        	<textarea id="comentariose" class="pure-input-1-2" placeholder="Digite aqui..." required></textarea>
+        	<textarea name="comment" class="pure-input-1-2" placeholder="Digite aqui..." required></textarea>
             
         </div>
         
         <div class="pure-controls">
 			<div class="g-recaptcha" data-sitekey="6LdoDxATAAAAAK6XK1E0qkAV0WhwigLsOvgmWNfj"></div>
-            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            <button type="submit" name="submit" value="submit" class="pure-button pure-button-primary">Submit</button>
 
             
         </div>
     </fieldset>
 	</form>
      
-    <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>    
+    <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>   
   </div>
   <!-- fim #desktop -->  
 </section>
