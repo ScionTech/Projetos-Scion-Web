@@ -194,8 +194,7 @@ Seção .CHAMADA <<<<<========================================
      min-height:100%;
 	 min-width:100%;
 	 height:100%;
-     width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/
-	 
+     width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/	 
      position: relative;
 
 	 
@@ -216,10 +215,19 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
 	 margin-top:10px;
      float:left;
      position:relative;
-     text-align:center;
-     width:43.859649122%; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
+     text-align:left;
+     width:52.631578947%; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
 	 background-color:#FFF;
 	 
+}
+
+.mobile{
+	 margin-top:10px;
+     float:right;
+     position:relative;
+     text-align:center;
+     width:30.701754385%; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
+	 background-color:#fff;	 
 }
 /*
 =========================
@@ -235,7 +243,7 @@ formatação do texto
 =========================
 */
 .container h3{
-     color:#fff;
+     color:#000;
      font-size: 1.77777777778em; /* 32px ÷ 18px = 1.77777777778em */
      font-weight: 300;
      letter-spacing: -0.0625em; /* -2px ÷ 32px = 0.0625em */
