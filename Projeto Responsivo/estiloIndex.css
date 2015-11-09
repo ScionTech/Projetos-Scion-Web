@@ -300,11 +300,20 @@ span.btn a{
 Seção FOOTER - Rodape com 2 colunas <<<<<===================
 ----------------------------------------------------------*/
 footer{
+	
      clear:both;
      height: 50px;
      padding: 10px 0;
      width:100%; /* 1200px ÷ 1200px = 1 x 100 = 100%*/
 }
+.RODAPE
+{
+	alignment-adjust:central;
+	position:relative;
+	width:100%;
+	
+}
+
 .copyright{
      float:left;
      margin-left: 2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
@@ -315,6 +324,7 @@ footer{
 .desenvolvedor figure{
      width:100%;
 }
+
 
 img {
     max-width: 100%; /*define a largura máxima em até 100%*/
