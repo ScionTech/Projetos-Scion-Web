@@ -534,6 +534,10 @@ header {
      .container p{
           display:none; /*oculta o parágrafo*/
      }
+	 #RODAPE
+{
+	background-image:url(imagens/pickup.jpg); position:relative;
+}
 /*footer*/
      .copyright, .desenvolvedor{
           float:none;
@@ -544,6 +548,7 @@ header {
      .desenvolvedor figure{
           width:inherit;
      }
+
 }
 
 /*cores dos links e H2*/
