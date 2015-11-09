@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<head>
+<title>Bocchi Eventos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="estiloQuemsomos.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- fim Estilos CSS -->
+	
+    <!-- função Menu -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+    <!-- fim função Menu -->
+        
+</head>
+
+
+<body class="center clearfix">
+
+<!-- Topo com logo e link -->
+<div align="center">
+	<a href="index.html"><img src="imagens/CabecalhoComLogo.fw.png"></a>
+</div>
+<!-- fim Topo com logo e link -->
+
+<!-- nav Menu -->
+<nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="index.html">Home</a></li>			
+			<li><a href="quemsomos.html">Quem Somos</a></li>
+			<li><a href="#">Equipamentos</a></li>
+            <li><a href="contato.html">Contato</a></li>			
+		</ul>
+		<a href="#" id="pull">Menu</a>
+</nav>
+<!-- fim nav Menu -->
+
+<!-- Quem Somos -->
+<div id"quemsomos">
+   <h1><center>Quem Somos</center></h1>
+    	 <h3>Desde 1.975 começamos com brincadeiras dançantes em residencias, pois naquele época assim se dizia e fazia muito bem.
+                                              Na solicitação de nossos serviços, lá chegavamos com som e iluminação, não tinha muita iluminação, pois até inventamos uma, em um toca disco que                                                     não funcionava, mas ficava show de bola e aproveitamos até anos 80.
+                                              Tivemos bom tempo sem atividades, iniciamos novamente em 2.007 aos poucos com aniversários, bodas, casamentos, corporativos, formaturas,                                                               palestras e eventos em geral.
+                                              Hoje contamos com estruturas, bons equipamentos de som e iluminação e DJ' para que seu evento seja de qualidade e de sucesso, pois esse e nosso                                                   compromisso.    	
+		</h3>
+</div>
+
+<!-- fim Quem Somos -->
+
+<!-- nav Banner Rotativo
+<div id="slider" style="border: 5px groove #fff; background-color:#000" >
+<figure>
+<img src="Banner Imagens/bass.jpg" alt="">
+<img src="Banner Imagens/4.jpg" alt="">
+<img src="Banner Imagens/dj.jpg" alt="">
+<img src="Banner Imagens/banner4.jpg" alt="">
+<img src="Banner Imagens/untitled.png" alt="">
+<img src="Banner Imagens/dj2.jpg" alt="">
+<img src="Banner Imagens/image.jpg" alt="">
+<img src="Banner Imagens/image2.jpg" alt="">
+</figure>
+</div>-->
+<!-- fim nav Banner Rotativo -->
+
+<!-- footer Rodape -->
+<footer>
+
+  <!-- copyright -->
+  <small class="copyright">
+  <p>Copyright © 2015 - Todos os Direitos Reservados ao <a href="http://www.sciontech.com" title="Scion Tech">Scion Tech</a></p>
+  </small>
+  <!-- fim .copyright -->
+  
+  <!-- .desenvolvedor -->
+  <small class="desenvolvedor"> Desenvolvedor </small>
+  <!-- fim .desenvolvedor --> 
+  
+</footer>
+<!-- fim footer Rodape-->
+
+<!-- sticky Social -->
+	<div class="sticky-container">
+		<ul class="sticky">
+			<li>	        	
+           	 	<img width="32" height="32" title="" alt="" src="imagens/fb1.png"/>
+                <p><a href="https://www.facebook.com/djbocchi?ref=aymt_homepage_panel" target="_blank">Facebook</a></p>             
+			</li>
+			<li>
+            	<img width="32" height="32" title="" alt="" src="imagens/tw1.png" />
+				<p><a href="https://twitter.com/bocchieventos" target="_blank">Twitter</a></p>
+			</li>
+			<li>
+            	<img width="32" height="32" title="" alt="" src="imagens/li1.png" />
+                <p><a href="https://br.linkedin.com/pub/bocchi-eventos-som-e-imunina%C3%A7%C3%A3o/77/610/732" target="_blank">Linkedin</a></p>
+			</li>
+		</ul>
+	</div>
+<!-- fim sticky Social -->
+
+</body>
+</html>
