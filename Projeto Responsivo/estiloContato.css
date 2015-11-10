@@ -190,21 +190,13 @@ line-height: 43px;
 /*----------------------------------------------------------
 Seção .CHAMADA <<<<<========================================
 ----------------------------------------------------------*/
-.chamada{
-     min-height:100%;
-	 min-width:100%;
-	 height:100%;
-     width:100%; /*1200px ÷ 1200px = 1 x 100 = 100%*/	 
-     position: relative;
 
-	 
-}
 /*----------------------------------------------------------
 Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
 ----------------------------------------------------------*/
 .container{
      background-color:#282828;
-     height: 417px;
+     height: 500px;
      padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
      width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
 	 margin-top:10px;
@@ -212,24 +204,25 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
 }
 /*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
 .desktop{
+	height:100%;
 	 margin-top:10px;
      float:left;
      position:relative;
      text-align:left;
-     width:52.631578947%; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
-	 background-color:#FFF;
+     width:auto; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
+	 background-color:transparent;
+	 border: #F00 5px solid;
 	 
 }
-
-.mobile{
-	 margin-top:10px;
-     float:right;
-     position:relative;
-     width:43.859649122%; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
-	 background-color:#fff;
-		 
+#phone
+{
+	position:relative;
+	width:39,47368421%;
+	background-color:transparent;
+	border: #F00 5px solid;
+	color:#000;
+	float:right;
 }
-
 /*
 =========================
 figure - imagens
@@ -317,9 +310,7 @@ img {
 
 
 @media screen and (max-width: 1200px){
-     .chamada h3 {
-          font-size: 1.66666666667em; /* 30px ÷ 18px */
-     }
+    
      .container h3{
           font-size: 1.55555555556em; /*  28px ÷ 18px */
      }
@@ -330,7 +321,7 @@ img {
 }
 
 /*Styles for screen 600px and lower*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
      h2, a, a:link, a:visited{
      color:#FBCA61;
 }
@@ -371,16 +362,7 @@ img {
         width: 100%;
         text-indent: 25px;
     }
-/*.chamada*/
-     .chamada{
-          height:200px;
-     }
-          h2 {
-               font-size: 2.2222222222em; /*40px ÷ 18px*/
-          }
-          .chamada h3{
-               font-size:1.1111111111em; /*20px ÷ 18px*/
-          }
+
 /*.container*/
      .container{
           background-color:#FCDA92;
@@ -391,6 +373,7 @@ img {
           .desktop, .tablet, .mobile{
                width:31.25%; /* 240px ÷ 768px */
           }
+		  
           .container .desktop figure, .container .tablet figure, .container .mobile figure {
                width:62.25%; /* 150px ÷ 240px %*/
           }
@@ -474,19 +457,6 @@ header {
         top: 10px;
     }
 
-/*.chamada*/
-.chamada{
-     height:130px;
-     margin-top:25px;
-}
-     h2 {
-          font-size: 1.4444444444em; /*26px ÷ 18px*/
-          letter-spacing:-0.0769230769230769em; /*2px ÷ 26px*/
-          margin-bottom: 15px;
-     }
-     .chamada h3{
-          font-size:0.7777777778em; /*14px ÷ 18px*/
-     }
 /*.container*/
 .container{   
      background-color:#9C8CB9;
@@ -542,22 +512,10 @@ header {
     nav li a {
         border-bottom: 1px solid #576979;
     }	  
-/*.chamada*/
-.chamada{
-     height:130px;
-     margin-top:20px;
-}
-     h2 {
-          font-size: 1.1111111111em; /*20px ÷ 18px*/
-          margin-bottom: 15px;
-     }
-     .chamada h3{
-          font-size:0.7777777778em; /*14px ÷ 18px*/
-     }
 /*.container*/
      .container .desktop, .container .tablet, .container .mobile{
           float:none;
-          height:160px;
+          height:100%;
           width:100%;
 
      }
@@ -596,3 +554,5 @@ div#slider figure {
   font-size: 0;
   animation: 30s slidy infinite; 
 }
+
+    
