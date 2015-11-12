@@ -203,25 +203,36 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
  	 
 }
 /*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
-.desktop{
-	height:100%;
+.desktop
+{
+	 height:100%;
 	 margin-top:10px;
      float:left;
      position:relative;
      text-align:left;
      width:auto; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
 	 background-color:transparent;
-	 border: #F00 5px solid;
-	 
+	 /*border: #F00 5px solid;*/
 }
-#phone
+
+.phone
 {
-	position:relative;
-	width:39,47368421%;
-	background-color:transparent;
-	border: #F00 5px solid;
-	color:#000;
-	float:right;
+	 height:100%;
+	 margin-top:10px;
+     float:right;
+     position:relative;
+     text-align:left;
+     width:49%; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
+	 background-color:transparent;
+	 /*border: #F00 5px solid;*/
+	 text-align:justify;
+}
+.phone, h4{
+	font-size:20px;
+	font-style:normal;
+	font-weight:200;
+	color:#fff;
+	letter-spacing:normal;
 }
 /*
 =========================
