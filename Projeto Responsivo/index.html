@@ -6,10 +6,13 @@
 <!-- Estilos CSS -->
 <link rel="stylesheet" href="estiloIndex.css">
 <link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="my-slider.css"/>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 <link rel="icon" href="imagens/Bocchi Eventos.ico">
 <!-- fim Estilos CSS -->
+
 <!-- função Menu -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>
 		$(function() {
@@ -56,22 +59,32 @@ td img {display: block;}
 		<a href="#" id="pull">Menu</a>
 </nav>
 <!-- fim nav Menu -->
-
-
-<!-- nav Banner Rotativo -->
-<div id="slider" style="border: 5px groove #fff; background-color:#000" >
-<figure>
-<img src="Banner Imagens/bass.jpg" alt="">
-<img src="Banner Imagens/4.jpg" alt="">
-<img src="Banner Imagens/dj.jpg" alt="">
-<img src="Banner Imagens/banner4.jpg" alt="">
-<img src="Banner Imagens/untitled.png" alt="">
-<img src="Banner Imagens/dj2.jpg" alt="">
-<img src="Banner Imagens/image.jpg" alt="">
-<img src="Banner Imagens/image2.jpg" alt="">
-</figure>
+<script src="ism-2.1-min.js"></script>
+<div class='container2'>
+<div class="ism-slider" data-transition_type="zoom" data-play_type="loop" data-radios="false" data-radio_type="thumbnail" id="my-slider">
+  <ol>
+    <li>
+      <img src="Banner Imagens/1447385553685_195677.png">
+      <div class="ism-caption ism-caption-0" data-delay='100'>Bem Vindo</div>
+    </li>
+    <li>
+      <img src="Banner Imagens/1447385566340_204226.png">
+      <div class="ism-caption ism-caption-0" data-delay='100'></div>
+    </li>
+    <li>
+      <img src="Banner Imagens/1447385564962_629967.png">
+      <div class="ism-caption ism-caption-0" data-delay='100'></div>
+    </li>
+    <li>
+      <img src="Banner Imagens/1447385571729_729969.png">
+      <div class="ism-caption ism-caption-0" data-delay='100'><a href="contato.html">CONTATE-NOS</a></div>
+    </li>
+  </ol>
 </div>
 <!-- fim nav Banner Rotativo -->
+<div id="video">
+	<center><iframe width="640" height="480" src="https://www.youtube.com/embed/2IGid5UKgoY?rel=0" frameborder="0" allowfullscreen></iframe></center>
+</div>
 
 <!-- footer Rodape -->
 

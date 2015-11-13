@@ -189,8 +189,6 @@ margin: 0px;
 text-transform: uppercase;
 line-height: 43px;
 }
-
-
 /*----------------------------------------------------------
 Seção .CHAMADA <<<<<========================================
 ----------------------------------------------------------*/
@@ -234,6 +232,15 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
 }
 .tablet{
      background-color:#FCDA92;
+}
+
+#video{
+	margin-top:20px;
+	width: 100%    !important;
+    height: 480px;
+	border:#000 solid 5px;
+	background: url(imagens/backgroundContato.jpg);
+    background-repeat: no-repeat;
 }
 /*
 =========================
@@ -604,7 +611,7 @@ header {
 100% { left: -400%; }
 }
 
-div#slider { overflow: hidden; }
+/*div#slider { overflow: hidden; margin-top:20px}
 div#slider figure img { width: 10%; height:auto; float: left; }
 div#slider figure { 
   position: relative;
@@ -615,4 +622,7 @@ div#slider figure {
   text-align: left;
   font-size: 0;
   animation: 30s slidy infinite; 
-}
+}*/
+
+.container2 { width: 100%; margin: auto; padding-top: 1em; }
+.container2 .ism-slider { margin-left: auto; margin-right: auto; }
