@@ -48,12 +48,10 @@ h3{
      font-weight: 300;
      letter-spacing: -2px; /*espaçamento entre as letras*/
      line-height: 38px;
-	 color:#B8860B;
 }
 p{
      font-weight: 300;/*modifica a força da fonte para light*/
      letter-spacing: -1px; /*espaçamento entre as letras*/
-	 text-decoration:none;
 }
 a, a:link, a:visited, a:hover{
      color:#FE9380; /*cor dos links*/
@@ -102,7 +100,7 @@ nav ul {
 	
 	padding: 0;
 	margin: 0 auto;
-	width: 600px;
+	width: 750px;
 	height: 40px;
 }
 nav li {
@@ -133,7 +131,6 @@ nav a:hover, nav a:active {
 nav a#pull {
 	display: none;
 }
-
 /*
 =========================
 nav - menu Social
