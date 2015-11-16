@@ -1,20 +1,20 @@
 .ism-slider > ol, .ism-slider > ol > li, .ism-slider > ol > li > img { width: 100%; list-style: none; margin: 0; padding: 0; }
 .ism-slider {
-  overflow: hidden;
-  position: relative;
-  padding: 0 !important;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.1);
-  -webkit-animation: ism-fadein 3s;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
+	overflow: hidden;
+	position: relative;
+	padding: 0 !important;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+	z-index: auto;
+	background-color: rgba(0, 0, 0, 0.1);
+	-webkit-animation: ism-fadein 3s;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
 }
 @-webkit-keyframes ism-fadein {
   from { opacity: 0; }
@@ -580,4 +580,3 @@ p.ism-badge a.ism-link:hover {
     border: none;
     color: #fff; background-color: rgba(0, 0, 0, 0.70);
 }
-
