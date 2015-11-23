@@ -165,7 +165,7 @@ filter: gray;
 -webkit-filter: grayscale(100%);
 }
 .sticky li:hover {
-margin-left: -115px;
+margin-left: -10px;
 -webkit-transform: translateX(-115px);
 		-moz-transform: translateX(-115px);
 		-o-transform: translateX(-115px);
@@ -195,7 +195,7 @@ Seção .CHAMADA <<<<<========================================
 Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
 ----------------------------------------------------------*/
 .container{
-     background-color:#282828;
+	 background-color:#000;
      height: 600px;
      padding:2.5%; /* 30px ÷ 1200px = 0.025 x 100 = 2.5%*/
      width:95%; /* 1200px ÷ 1200px = 1 x 100 = 100% .:. 100% - 5.0% de padding (direita e esquerda) = 95%*/
@@ -211,8 +211,8 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
      position:relative;
      text-align:left;
      width:auto; /* 500px ÷ 1140px = 0.43859649122 x 100 = 43.859649122%*/
-	 background-color:#666;
 	 /*border: #F00 5px solid;*/
+	 background-color:#666;
 }
 
 .phone
@@ -238,10 +238,7 @@ Seção .CONTAINER - Conteúdo com 3 colunas <<<<<=============
 .none{
 	list-style-type: none
 }
-.pure-control-group{
-	color:#fff;
-	
-}
+
 /*
 =========================
 figure - imagens

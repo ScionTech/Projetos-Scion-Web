@@ -66,6 +66,7 @@
   <h4></h4>   
     <form class="pure-form pure-form-aligned"  method="post" action="email.php">
     <fieldset id="formulario">
+    
         <div class="pure-control-group">
             <label for="name">Nome</label>
             <input name="name" type="text" placeholder="Nome" autofocus required>
@@ -83,20 +84,25 @@
         
      	<div class="pure-control-group">
         	<label for="titulo">Assunto</label>
-        	<select name="request" class="pure-input-1-2" required="required">
+        	<select name="request" class="pure-input-1-2" required>
             	<option value="">Selecione...</option>
                 <option value="Casamento">Casamento</option>
-                <option value="Confraternização">Confraternização</option>
-                         </select>
-        </div>
+                <option value="Aniversários">Aniversários</option>
+                <option value="Bodas">Bodas</option>
+                <option value="Debutantes">Debutantes</option>
+                <option value="Eventos Corporativos">Eventos Corporativos</option>
+                <option value="Palestras">Palestras</option>
+                <option value="Formaturas e Pré com banda">Formaturas e Pré com banda</option>
+            </select>
+        
             
         <div class="pure-control-group">
             <label for="comentarios">Comentarios</label>
         	<textarea name="comment" class="pure-input-1-2" placeholder="Digite aqui..." required></textarea>
-        </div>
+        </div></div>
         
-        <div class="pure-controls">
-			<div class="g-recaptcha" data-sitekey="6LdoDxATAAAAAK6XK1E0qkAV0WhwigLsOvgmWNfj" data-theme="dark"></div>
+        <div class="pure-control-group" align="center">
+			<div class="g-recaptcha" data-sitekey="6LdoDxATAAAAAK6XK1E0qkAV0WhwigLsOvgmWNfj" data-theme="dark" align="right"></div>
             <button type="submit" name="submit" value="submit" class="pure-button pure-button-primary">Enviar</button>            
 	    </div>
     </fieldset>
