@@ -1,5 +1,6 @@
 .ism-slider > ol, .ism-slider > ol > li, .ism-slider > ol > li > img { width: 100%; list-style: none; margin: 0; padding: 0; }
 .ism-slider {
+	margin-top: 20px;
 	overflow: hidden;
 	position: relative;
 	padding: 0 !important;
