@@ -1,4 +1,4 @@
-img = new Array('1','2','3','4');
+img = new Array('1','2','3','4','5','6');
 
 indice = 0;
 
@@ -6,7 +6,7 @@ setInterval("mudaImg()", 7000);
 	
 function mudaImg(i) {
 
-	if (i == 0 || i == 1 || i == 2 || i == 3) {
+	if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4 || i == 5) {
 		
 		indice = i;
 		
@@ -30,6 +30,8 @@ function mudaImg(i) {
 	document.getElementById("banner_img_2").setAttribute("class", "");
 	document.getElementById("banner_img_3").setAttribute("class", "");
 	document.getElementById("banner_img_4").setAttribute("class", "");
+	document.getElementById("banner_img_5").setAttribute("class", "");
+	document.getElementById("banner_img_6").setAttribute("class", "");
 	document.getElementById("banner_img_" + img[indice]).setAttribute("class", "hover");
 	
 	document.getElementById("banner_img").innerHTML = "<img src='banner_img/"+ img[indice] +".jpg' width='100%' height='100%' border='0' alt='Banner'>";
